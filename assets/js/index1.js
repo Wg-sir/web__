@@ -18,7 +18,7 @@ function getUserInfo() {
         return layui.layer.msg('获取用户信息失败')
       }
       renderAvatar(res.data)
-    }
+    },
     // complete:function(res){
     //   console.log('执行了回调');
     //   console.log(res);
@@ -26,6 +26,9 @@ function getUserInfo() {
     //   // //强制清空token
     //   // localStorage.removeItem('token')
     //   // location.href='./login.html'
+    // }
+    // complete:function(res){
+    //   console.log(res);
     // }
   })
 }
@@ -39,7 +42,7 @@ function renderAvatar(user) {
   } else {
     $('.layui-nav-img').hide()
     var first = name.substr(0, 1).toUpperCase()
-    console.log(first);
+    // console.log(first);
     $('.text-avatar').html(first).show()
   }
 }
