@@ -49,6 +49,7 @@ $(function () {
         }
         //调用父级的方法将头像渲染到页面
         window.parent.getUserInfo()
+        
       }
     })
 

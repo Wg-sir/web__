@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/demo/assets/lib/layui/css/layui.css">
+  <link rel="stylesheet" href="/demo/assets/css/article/art_add.css">
+</head>
+
+<body>
+  <div class="layui-card">
+    <!-- <div class="layui-card-header">添加文章分类</div> -->
+    <div class="layui-card-body">
+      <form class="layui-form" id="form-add">
+      <div class="layui-form-item">      
+          <label class="layui-form-label">分类名称</label>
+          <div class="layui-input-block">
+            <input type="text" name="name" required lay-verify="required" placeholder="请输入分类名称" autocomplete="off"
+              class="layui-input">
+          </div>
+      </div>
+      <div class="layui-form-item">
+        <label class="layui-form-label">分类别名</label>
+        <div class="layui-input-block">
+          <input type="text" name="alias" required lay-verify="required" placeholder="请输入分类别名" autocomplete="off"
+            class="layui-input">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="layui-input-block">
+          <button class="layui-btn" lay_submit lay-filter="forDemo">确定添加</button>
+          <button type="button" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <script src="/demo/assets/lib/layui/layui.all.js"></script>
+  <script src="/demo/assets/lib/jquery.js"></script>
+  <script src="/demo/assets/js/baseAPI1.js"></script>
+  <script src="/demo/assets/js/article/art_add.js"></script>
+</body>
+
+</html>

@@ -54,6 +54,7 @@ $(function(){
         if(res.status !== 0){
           layer.msg('登录失败')
         }
+        console.log(res);
         layer.msg('登录成功')
         localStorage.setItem('token',res.token)
         location.href = './index.html'
